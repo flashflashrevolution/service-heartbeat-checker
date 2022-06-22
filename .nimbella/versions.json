@@ -10,8 +10,8 @@
     },
     "actionVersions": {
       "service-heartbeat-checker/check": {
-        "version": "0.0.1",
-        "digest": "6061cdff9153d57b702039eb86e53dbd9df7825c1425f0cf8e96123b7a6ad014"
+        "version": "0.0.13",
+        "digest": "2d92cb17e9613accac5192732ecdbe5cfe30e14b195e697ea195c9c2c4f396c0"
       }
     },
     "webHashes": {}

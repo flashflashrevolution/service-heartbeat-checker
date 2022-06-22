@@ -3,7 +3,18 @@ def main(args):
     Can be customed in project.yml
     """
 
-    return {
-        "body": {"data": "Hello, watched incremental build!"},
-        "statusCode": 200,
-    }
+    import os
+
+    hostname = "flashflashrevolution.com"  # example
+    response = os.system("ping -c 1 -W 1 " + hostname)
+
+    if response == 0:
+        return {
+            "body": {"statusCode": 200, "message": "OK"},
+            "statusCode": 200,
+        }
+    else:
+        return {
+            "body": {"statusCode": 503, "message": "BAD"},
+            "statusCode": 200,
+        }
