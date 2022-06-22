@@ -2,5 +2,8 @@ packages:
   - name: heartbeat
     actions:
       - name: check
+        limits:
+          memory: 128
+          timeout: 1256
         runtime: 'python:default'
         web: raw

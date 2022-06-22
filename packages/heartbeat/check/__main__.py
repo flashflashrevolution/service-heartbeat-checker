@@ -6,7 +6,7 @@ def main(args):
     import os
 
     hostname = "flashflashrevolution.com"  # example
-    response = os.system("ping -c 1 -W 1 " + hostname)
+    response = os.system("ping -c1 -W1 -t150 " + hostname)
 
     if response == 0:
         return {
