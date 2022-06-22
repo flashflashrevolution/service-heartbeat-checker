@@ -3,15 +3,15 @@
     "apihost": "https://faas-tor1-70ca848e.doserverless.co",
     "namespace": "fn-4eb9f1f5-d120-4108-92ec-4c8a481e17d2",
     "packageVersions": {
-      "service-heartbeat-checker": {
+      "heartbeat": {
         "version": "0.0.1",
         "digest": "589983545768c0e5794fd13c46175113248b65b3c1ae83c62a48aab7a429966c"
       }
     },
     "actionVersions": {
-      "service-heartbeat-checker/check": {
-        "version": "0.0.13",
-        "digest": "2d92cb17e9613accac5192732ecdbe5cfe30e14b195e697ea195c9c2c4f396c0"
+      "heartbeat/check": {
+        "version": "0.0.1",
+        "digest": "3964f25468ef3d5a72d383c5da1458f98080e1a26a8f21aae4c950fb2cb3941f"
       }
     },
     "webHashes": {}

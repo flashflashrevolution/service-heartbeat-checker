@@ -61,3 +61,7 @@ You may also use incremental directory watching to avoid having to run deploymen
 > Error: While deploying action 'some-service/action': Action is named in the config but does not exist in the project
 
 This means that you've forgotten to rename the folder structures that your function lives in. Ex. `packagtes/digitalocean-serverless/test`.
+
+## Deplying to an App
+
+- Before you deploy to an app you'll need to make `build.sh` executable if you haven't already. Run `git update-index --chmod=+x path/to/build.sh`

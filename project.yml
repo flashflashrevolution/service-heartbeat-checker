@@ -1,5 +1,5 @@
 packages:
-  - name: service-heartbeat-checker
+  - name: heartbeat
     actions:
       - name: check
         runtime: 'python:default'
