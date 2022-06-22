@@ -1,6 +1,6 @@
 packages:
-  - name: digitalocean-serverless
+  - name: service-heartbeat-checker
     actions:
-      - name: test
+      - name: check
         runtime: 'python:default'
         web: raw

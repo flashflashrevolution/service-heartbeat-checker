@@ -37,15 +37,27 @@ packages:
 If you have dependencies in any of the actions,
 you will need to implement `build.<sh|cmd>` scripts for your platform.
 
-`doctl sls deploy . --incremental --env .env`
+`doctl sls deploy . --incremental`
 
 If you'd rather just implement different platform build scripts,
 then use the following command to keep to one.
 
-`doctl sls deploy . --remote-build --env .env`
+`doctl sls deploy . --remote-build`
+
+### Environment Variables
+
+If you have environment variables, add this flag to the deploy command.
+`--env .env`
 
 ### Watch
 
 You may also use incremental directory watching to avoid having to run deployment automatically.
 
 `doctl sls watch .`
+
+
+### Errors
+
+> Error: While deploying action 'some-service/action': Action is named in the config but does not exist in the project
+
+This means that you've forgotten to rename the folder structures that your function lives in. Ex. `packagtes/digitalocean-serverless/test`.

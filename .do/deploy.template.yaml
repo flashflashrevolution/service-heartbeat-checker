@@ -5,9 +5,9 @@ functions:
 - github:
     branch: main
     deploy_on_push: true
-    repo: zageron/digital-ocean-serverless
-  name: test
+    repo: flashflashrevolution/service-heartbeat-checker
+  name: check
   routes:
   - path: /
   source_dir: /
-name: digital-ocean-serverless
+name: service-heartbeat-checker
