@@ -10,8 +10,8 @@
     },
     "actionVersions": {
       "heartbeat/check": {
-        "version": "0.0.19",
-        "digest": "d896ab81e990cae9aba81270eb0eaab89f05e6f056da1a8bfd5384c772f991e8"
+        "version": "0.0.20",
+        "digest": "56d33cdd0bfcae755b685287be9d001d556f1814040de92bbaa378055df40111"
       }
     },
     "webHashes": {}
