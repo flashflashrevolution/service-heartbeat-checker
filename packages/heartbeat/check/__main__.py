@@ -3,18 +3,26 @@ def main(args):
     Can be customed in project.yml
     """
 
-    import os
+    from urllib import error, request
 
-    hostname = "flashflashrevolution.com"  # example
-    response = os.system("ping -c1 -W1 -t150 " + hostname)
-
-    if response == 0:
+    try:
+        r = request.urlopen("https://flashflashrevolution.com/zageron", timeout=0.2)
         return {
             "body": {"statusCode": 200, "message": "OK"},
             "statusCode": 200,
         }
-    else:
+    except TimeoutError:
         return {
-            "body": {"statusCode": 503, "message": "BAD"},
+            "body": {"statusCode": 408, "message": "Request Timeout"},
+            "statusCode": 200,
+        }
+    except error.HTTPError:
+        return {
+            "body": {"statusCode": 503, "message": "Web Error"},
+            "statusCode": 200,
+        }
+    except error.URLError:
+        return {
+            "body": {"statusCode": 503, "message": "Timeout"},
             "statusCode": 200,
         }

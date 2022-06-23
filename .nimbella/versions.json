@@ -4,14 +4,14 @@
     "namespace": "fn-4eb9f1f5-d120-4108-92ec-4c8a481e17d2",
     "packageVersions": {
       "heartbeat": {
-        "version": "0.0.1",
+        "version": "0.0.51",
         "digest": "589983545768c0e5794fd13c46175113248b65b3c1ae83c62a48aab7a429966c"
       }
     },
     "actionVersions": {
       "heartbeat/check": {
-        "version": "0.0.20",
-        "digest": "56d33cdd0bfcae755b685287be9d001d556f1814040de92bbaa378055df40111"
+        "version": "0.0.60",
+        "digest": "8da107ccc04d5915284a811a4565b40b9faec07df99ceaa843d47353639f811b"
       }
     },
     "webHashes": {}
