@@ -4,6 +4,6 @@ packages:
       - name: check
         limits:
           memory: 128
-          timeout: 500
+          timeout: 1000
         runtime: 'python:default'
         web: raw
